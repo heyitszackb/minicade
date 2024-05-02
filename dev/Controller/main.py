@@ -13,7 +13,6 @@ class Controller:
     def update(self): # executed each frame
         # process actions:
         if pyxel.btnp(pyxel.KEY_0):
-            print("0")
             self.model.make_move(0)
         if pyxel.btnp(pyxel.KEY_1):
             self.model.make_move(1)
@@ -33,12 +32,8 @@ class Controller:
             self.model.make_move(8)
         if pyxel.btnp(pyxel.KEY_R):
             self.model.reset()
-            print("RESET")
-            print(self.model.get_board())
-
-
         self.view.update() # executed each frame
 
     def draw(self): # executed each frame
         self.view.draw(self.model) # executed each frame
-        print(self.model.get_board())
+        print(self.model.get_winning_player())
