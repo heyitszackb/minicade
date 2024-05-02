@@ -1,5 +1,8 @@
 from const import DRAW, PLAYER_X, PLAYER_O
 
+# Potential future improvements on the model include making a player class and a board class.
+# That way, none of the things are hardcoded into the model, and the model can be more easily extended.
+
 class Model:
     def __init__(self) -> None:
         self._board = [ # Token Slots

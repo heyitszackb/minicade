@@ -2,7 +2,7 @@ import pyxel
 
 from const import PLAYER_X, PLAYER_O, DRAW
 
-from model import Model
+from Model.main import Model
 
 class View:
     def __init__(self):

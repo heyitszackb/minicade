@@ -1,6 +1,6 @@
 import pyxel
-from model import Model
-from view import View
+from Model.main import Model
+from View.main import View
 
 class Controller:
     def __init__(self):
